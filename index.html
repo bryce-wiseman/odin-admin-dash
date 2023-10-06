@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        <div class="name">Person</div>
+        <!-- frog icon by Icons8 -->
+        <div class="frog">
+            <img src="icons/frog.png" alt="frog">
+        </div>
+        <div class="greeting">Well hello there,</div>
+        <div class="name">Random Person <span id="handle">(@howdystranger)</span></div>
         <div class="header-btns">
             <button id="new">New</button>
             <button id="upload">Upload</button>
@@ -16,29 +22,69 @@
         </div>
     </div>
     <div class="sidebar">
-        <div id="side-logo"></div>
-        <div class="side-content">Home</div>
-        <div class="side-content">Profile</div>
-        <div class="side-content">Messages</div>
-        <div class="side-content">History</div>
-        <div class="side-content">Tasks</div>
-        <div class="side-content">Communities</div>
-
-        <div class="side-content">Settings</div>
-        <div class="side-content">Support</div>
-        <div class="side-content">Privacy</div>
+        <div id="side-logo">PlaceHolder</div>
+        <div class="sc1">
+            <div class="side-content">Home</div>
+            <div class="side-content">Profile</div>
+            <div class="side-content">Messages</div>
+            <div class="side-content">History</div>
+            <div class="side-content">Tasks</div>
+            <div class="side-content">Communities</div>
+        </div>
+        <div class="sc2">
+            <div class="side-content">Settings</div>
+            <div class="side-content">Support</div>
+            <div class="side-content">Privacy</div>
+        </div>
     </div>
     <div class="main">
-        <div class="card">1</div>
-        <div class="card">2</div>
-        <div class="card">3</div>
-        <div class="card">4</div>
-        <div class="card">5</div>
-        <div class="card">6</div>
+        <div class="card"><p class="card-title">Project 1</p><p class="card-content">One-score and seven years ago, things happened but I don't know what they are without lookng them up</p></div>
+        <div class="card"><p class="card-title">Project 2</p><p class="card-content">Two-score and seven years ago, things happened but I don't know what they are without lookng them up</p></div>
+        <div class="card"><p class="card-title">Project 3</p><p class="card-content">Three-score and seven years ago, things happened but I don't know what they are without lookng them up</p></div>
+        <div class="card"><p class="card-title">Project 4</p><p class="card-content">Four-score and seven years ago, things happened but I don't know what they are without lookng them up</p></div>
+        <div class="card"><p class="card-title">Project 5</p><p class="card-content">Five-score and seven years ago, things happened but I don't know what they are without lookng them up</p></div>
+        <div class="card"><p class="card-title">Project 6</p><p class="card-content">Six-score and seven years ago, things happened but I don't know what they are without lookng them up</p></div>
     </div>
     <div class="side-titles">
-        <div class="side-title-content">Announcements</div>
-        <div class="side-title-content">Trending</div>
+        <p id="announce-label">Announcements</p>
+        <div class="side-title-content" id="announcements">
+            <div class="au">
+                <p class="ah">Breaking: Mitten Update</p>
+                <p class="ac">According to new study, spiders only wear mittens on the first 2 legs. The remaining 6 legs wear boots instead.</p>
+            </div>
+            <div class="au">
+                <p class="ah">True Fact</p>
+                <p class="ac">Wood frogs can be frozen during winter and thaw out in spring thanks to a natural "anti-freeze" in their blood.</p>
+            </div>
+            <div class="au">
+                <p class="ah">BIG NEWS!</p>
+                <p class="ac">My cat went "mrow" at me this morning!...that's all the news I had...but fun though right?</p>
+            </div>
+        </div>
+        <p id="trend-label">Trending</p>
+        <div class="side-title-content" id="trending">
+            <div class="t-frog">
+                <img src="icons/frog.png" alt="frog">
+            </div>
+            <div class="tu">
+                <p class="th">@oldmacdonald</p>
+                <p class="tc">EIEI and also O</p>
+            </div>
+            <div class="t-frog">
+                <img src="icons/frog.png" alt="frog">
+            </div>
+            <div class="tu">
+                <p class="th">@spiderman</p>
+                <p class="tc">Web Developer</p>
+            </div>
+            <div class="t-frog">
+                <img src="icons/frog.png" alt="frog">
+            </div>
+            <div class="tu">
+                <p class="th">@cowboycoleslaw</p>
+                <p class="tc">Putting the yeehaw in coleslaw</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

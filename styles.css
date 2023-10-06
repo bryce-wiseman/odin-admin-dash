@@ -4,22 +4,104 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
+    font-family: 'Aleo', sans-serif;
+    max-height: 100vh;
 }
 
 .header {
     background-color: hsl(160, 80%, 30%);
-    padding: 20px;
+    padding: 40px 20px 10px 20px;
     grid-area: 1 / 2 / 2 / 4;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40px;
+    grid-template-columns: 120px 3fr 2fr;
+    grid-template-rows: 50px 50px;
+    height: 100%;
+}
+
+.frog {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.frog:hover {
+    transition: 2s;
+    rotate: 1080deg;
+}
+
+.frog img {
+    height: 80px;
+}
+
+.greeting {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: end;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.name {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 2rem;
+}
+
+#handle {
+    font-size: 1.5rem;
+}
+
+.header-btns {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: white;
+    border-radius: 40px;
+    color: hsl(160, 80%, 30%);
+    border: none;
+    padding: 5px;
+    width: clamp(70px, 6vw, 150px);
+    height: 35px;
+    font-size: 1rem;
+    font-family: 'Aleo', serif;
+    font-weight: 600;
+}
+
+#new:hover, #upload:hover, #share:hover {
+    transition: .5s;
+    background-color: hsl(160, 80%, 10%);
+    height: 40px;
+    width: clamp(80px, 6.2vw, 160px);
 }
 
 .sidebar {
     background-color: hsl(160, 80%, 10%);
     color: whitesmoke;
     grid-area: 1 / 1 / 4 / 2;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 20px 20px;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    line-height: 2.2rem;
+}
 
+#side-logo {
+    text-decoration: underline;
+}
+
+.side-content:hover {
+    color: hsl(160, 30%, 50%);
+    text-decoration: underline;
 }
 
 .main {
@@ -30,17 +112,97 @@ body {
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    
 }
 
 .card {
     background-color: whitesmoke;
+    border-left: solid hsl(160, 80%, 30%) 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card:hover {
+    transition: .5s;
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
 }
 
 .side-titles {
     background-color: whitesmoke;
     grid-area: 2 / 3 / 4 / 4;
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 30px 1fr 30px 1fr;
+    color: hsl(160, 80%, 10%);
+    padding: 20px;
+}
+
+.side-title-content {
+    background-color: hsl(160, 80%, 10%);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+#announce-label, #trend-label {
+    font-size: 1.1rem;
+}
+
+#announcements {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#trending {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
+
+.t-frog {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.t-frog img {
+    height: 30px;
+}
+
+.ah, .th {
+    font-size: .9rem;
+    font-weight: 600;
+    width: 90%;
+    padding: 0 8px;
+    margin-bottom: -8px;
+}
+
+.ac, .tc {
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 0 8px;
+}
+
+.au {
+    border-bottom: 1px solid white;
+}
+
+.au:last-child {
+    border-bottom: none;
+}
+
+.au:hover {
+    background-color: hsl(160, 30%, 50%);
 }
